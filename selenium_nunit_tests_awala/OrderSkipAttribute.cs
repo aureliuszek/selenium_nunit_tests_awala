@@ -16,7 +16,7 @@ namespace selenium_nunit_tests_awala
     {
 
         [Test, Category("OrderSkipAttribute"), Order(2)]
-        public void TestAlbicla1()
+        public void TestAlbiclaChrome()
         {
             IWebDriver driver = new ChromeDriver();
             driver.Url = "https://albicla.com/zarejestruj";
@@ -38,7 +38,7 @@ namespace selenium_nunit_tests_awala
             driver.Close();
         }
         [Test, Category("OrderSkipAttribute"), Order(1)]
-        public void TestAlbicla2()
+        public void TestAlbiclaInternetExplorer()
         {
             Assert.Ignore("Explorer sie sypie to dałem asserta");
             IWebDriver driver = new InternetExplorerDriver();
@@ -62,7 +62,7 @@ namespace selenium_nunit_tests_awala
             
         }
         [Test, Category("OrderSkipAttribute"), Order(0)]
-        public void TestAlbicla3()
+        public void TestAlbiclaFirefox()
         {
             IWebDriver driver = new FirefoxDriver();
             driver.Url = "https://albicla.com/zarejestruj";
